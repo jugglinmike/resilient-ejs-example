@@ -39,13 +39,12 @@
   </head>
   <body>
     <main>
-      <header>
-        <h1>Example Site</h1>
-        <ul>
-          <li><a href="/">Main</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </header>
+      <!--
+        When the EJS rendering engine processes this view, it recognizes the
+        following syntax and inserts the content of `header.js`. This means we
+        don't have to duplicate the header on every page.
+      -->
+      <%- include('header.ejs') %>
       <div>
         <p>Contact us</p>
 
